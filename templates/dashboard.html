@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сакура: JARVIS Панель</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="/static/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0b1e, #1c2526);
+            font-family: 'Inter', sans-serif;
+        }
+        button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+        button:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+        }
+        #response {
+            background: rgba(0, 0, 0, 0.7);
+            border: 10px solid rgba(0, 255, 204, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold text-white mb-6 text-center">🔴 САКАУРА: JARVIS AI</h1>
+        <div class="mb-4 text-center">
+            <p>Статус: <span id="online-status" class="{{ 'text-green-700' if online_status else 'text-red-700' }}">{{ 'Онлайн' if online_status else 'Офлайн' }}<span></p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
+                <h2 class="text-xl font-bold mb-3 text-green-500">🛠️ Команди</h2>
+                <div class="flex flex-wrap gap-3">
+                    <button onclick="sendCommand('system')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">💻 Система</button>
+                    <button onclick="sendCommand('scan')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">🔍 Скан</button>
+                    <button onclick="sendCommand('market')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">📈 Крипт</button>
+                    <button onclick="sendCommand('trades')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">💹 Угоди</button>
+                    <button onclick="sendCommand('positions')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">📊 Позиції</button>
+                    <button onclick="sendCommand('testnet')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">🧪 Testnet</button>
+                    <button onclick="sendCommand('cloud')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">☁️ Резерв</button>
+                    <button onclick="sendCommand('upgrade')" class="bg-purple-900 text-white px-4 py-2 rounded-lg">🚀 Апгрейд</button>
+                    <button onclick="sendCommand('music')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">🎵 Музыка</button>
+                    <button onclick="sendCommand('search')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">🔍 Поиск</button>
+                    <button onclick="sendCommand('run')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">💻 Запуск</button>
+                    <button onclick="sendCommand('kill')" class="bg-blue-900 text-white px-4 py-2 rounded-lg">🛑 Стоп</button>
+                    <button onclick="startVoice()" class="bg-green-700 text-white px-4 py-2 rounded-lg">🎙️ Голос</button>
+                </div>
+                <div class="mt-4">
+                    <input id="commandInput" type="text" class="bg-black bg-opacity-70 text-white px-4 py-2 rounded-lg w-full" placeholder="Введіть команду...">
+                    <button onclick="sendCommand(document.getElementById('commandInput').value)" class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-2 w-full">Отправить</button>
+                </div>
+            </div>
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
+                <h2 class="text-xl font-bold mb-2 text-green-500">📢 Відповідь</h2>
+                <div id="response" class="p-3 rounded-lg h-64 overflow-y-auto text-lg">{{ market_data }}</div>
+            </div>
+        </div>
+        <div class="mt-64 bg-black bg-opacity-50 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2 text-green-500">📊 Графiк ринкy</h2>
+            <canvas id="marketChart" width="800" height="400"></canvas>
+        </div>
+        <div class="mt-64 bg-black bg-opacity-50 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2 text-blue-500">📜 Логи</h2>
+            <div id="logs" class="p-3 bg-gray-900 rounded-lg h-64 overflow-y-auto">
+                {% for h in history %}
+                <p class="text-blue-300">{{ h[1] }}: {{ h[2] }} ({{ h[3] }})</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="mt-4 bg-black bg-opacity-50 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2 text-blue-500">🚨 Підозрілі процеси</h2>
+            <div class="p-3 bg-gray-900 rounded">
+                {% for s in suspicious %}
+                <p class="text-blue-400">{{ s[0] }} (CPU: {{ s[1] }}%, RAM: {{ s[2] }}%) - {{ s[4] }} ({{ s[5] }})</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="mt-4 bg-black bg-opacity-50 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2 text-blue-500">💸 Торги</h2>
+            <div class="p-3 bg-gray-900 rounded">
+                {% for t in trades %}
+                <p class="text-blue-400">{{ t[1] }} {{ t[2] }}: {{ t[3] }} @ {{ t[4] }} ({{ t[5] }})</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="mt-4 bg-black bg-opacity-50 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2 text-blue-500">🚀 Апгрейди</h2>
+            <div class="p-3 bg-gray-900 rounded">
+                {% for u in upgrades %}
+                <p class="text-blue-400">{{ u[1] }}: {{ u[2] }} ({{ u[3] }})</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

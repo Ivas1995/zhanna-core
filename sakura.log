@@ -1,0 +1,80 @@
+2025-06-13 01:40:26,991 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 01:40:44,456 - INFO - Starting Sakura AI...
+2025-06-13 01:40:45,753 - INFO - Model mistral-7b-openorca.Q4_0.gguf loaded successfully
+2025-06-13 02:07:34,380 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:07:35,926 - INFO - Starting Sakura AI...
+2025-06-13 02:07:36,301 - INFO - Model mistral-7b-openorca.Q4_0.gguf loaded successfully
+2025-06-13 02:14:20,022 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:17:39,593 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:27:28,705 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:28:07,655 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:28:07,733 - ERROR - Помилка ініціалізації Telegram: Only timezones from the pytz library are supported
+2025-06-13 02:41:52,958 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:42:31,130 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 02:42:34,566 - INFO - Starting Sakura AI...
+2025-06-13 02:42:35,081 - INFO - Model mistral-7b-openorca.Q4_0.gguf loaded successfully
+2025-06-13 02:42:35,320 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for public endpoints
+2025-06-13 02:42:35,335 - INFO - Запуск хмарного менеджера...
+2025-06-13 02:42:35,382 - INFO - Ініціалізація Dataspaces...
+2025-06-13 02:42:35,398 - ERROR - Помилка ініціалізації Dataspaces: decrypt_data() missing 1 required positional argument: 'encryption_key'. Сакура працює локально. Завантаж на Dataspaces вручну.
+2025-06-13 02:42:35,507 - INFO - Сповіщення надіслано: Помилка ініціалізації Dataspaces: decrypt_data() missing 1 required positional argument: 'encryption_key'. Сакура працює локально. Завантаж на Dataspaces вручну.
+2025-06-13 02:42:35,507 - INFO - Bot is running...
+2025-06-13 02:42:36,650 - INFO - Сповіщення надіслано: Виявлено підозрілий процес: System Idle Process (CPU: 0.0%, RAM: 4.86655658515671e-05%). Знешкодити? Відповідай 'Знешкодити System Idle Process'.
+2025-06-13 02:42:36,728 - INFO - Сповіщення надіслано: Виявлено підозрілий процес: System (CPU: 0.0%, RAM: 0.06311923890948253%). Знешкодити? Відповідай 'Знешкодити System'.
+2025-06-13 02:42:36,869 - INFO - Сповіщення надіслано: Виявлено підозрілий процес:  (CPU: 0.0%, RAM: 1.336210441586478%). Знешкодити? Відповідай 'Знешкодити '.
+2025-06-13 02:42:37,231 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getMe "HTTP/1.1 200 OK"
+2025-06-13 02:42:37,341 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-13 02:42:37,356 - INFO - Scheduler started
+2025-06-13 02:42:37,356 - INFO - Application started
+2025-06-13 02:42:47,721 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:42:57,923 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:43:09,599 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:43:35,353 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for public endpoints
+2025-06-13 02:43:35,702 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:44:01,349 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:44:11,477 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:44:21,578 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:44:31,927 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:44:35,355 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for public endpoints
+2025-06-13 02:44:42,064 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:44:52,305 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:45:02,544 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:45:12,786 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:45:22,940 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:45:33,161 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:45:35,380 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for public endpoints
+2025-06-13 02:46:07,464 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:46:17,706 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:46:27,818 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:46:37,904 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:46:48,092 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:46:57,296 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for public endpoints
+2025-06-13 02:46:58,184 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:47:08,279 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:47:18,501 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:47:28,648 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 02:47:38,762 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 03:08:50,415 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 03:08:52,446 - INFO - Starting Sakura AI...
+2025-06-13 03:08:53,009 - INFO - Model mistral-7b-openorca.Q4_0.gguf loaded successfully
+2025-06-13 03:08:53,337 - INFO - Запуск хмарного менеджера...
+2025-06-13 03:08:53,353 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for sapi endpoints
+2025-06-13 03:08:53,368 - INFO - Ініціалізація Dataspaces...
+2025-06-13 03:08:53,446 - ERROR - Помилка ініціалізації Dataspaces: decrypt_data() missing 1 required positional argument: 'encryption_key'. Сакура працює локально. Завантаж на Dataspaces вручну.
+2025-06-13 03:08:53,621 - INFO - Сповіщення надіслано: Помилка ініціалізації Dataspaces: decrypt_data() missing 1 required positional argument: 'encryption_key'. Сакура працює локально. Завантаж на Dataspaces вручну.
+2025-06-13 03:08:53,637 - INFO - Bot is running...
+2025-06-13 03:08:53,949 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getMe "HTTP/1.1 200 OK"
+2025-06-13 03:08:53,949 - INFO - Сповіщення надіслано: Виявлено підозрілий процес: System Idle Process (CPU: 0.0%, RAM: 4.86655658515671e-05%). Знешкодити? Відповідай 'Знешкодити System Idle Process'.
+2025-06-13 03:08:54,059 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-13 03:08:54,059 - INFO - Scheduler started
+2025-06-13 03:08:54,059 - INFO - Application started
+2025-06-13 03:08:54,106 - INFO - Сповіщення надіслано: Виявлено підозрілий процес: System (CPU: 0.0%, RAM: 0.0633139011728888%). Знешкодити? Відповідай 'Знешкодити System'.
+2025-06-13 03:08:54,418 - INFO - Сповіщення надіслано: Виявлено підозрілий процес:  (CPU: 0.0%, RAM: 1.5344739568657624%). Знешкодити? Відповідай 'Знешкодити '.
+2025-06-13 03:09:04,375 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 03:09:29,641 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 03:09:39,745 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 03:09:49,821 - INFO - HTTP Request: POST https://api.telegram.org/bot7339214786:AAHIAywsmhBADReT2Oh_tS8XDcO-6-DkVGk/getUpdates "HTTP/1.1 200 OK"
+2025-06-13 03:09:53,395 - ERROR - Помилка ініціалізації Binance: binance does not have a testnet/sandbox URL for sapi endpoints
+2025-06-13 03:16:09,320 - INFO - Модель mistral-7b-openorca.Q4_0.gguf знайдено за шляхом C:\Zhanna\startup\models\mistral-7b-openorca.Q4_0.gguf.
+2025-06-13 03:16:10,898 - INFO - Starting Sakura AI...
+2025-06-13 03:16:11,273 - INFO - Model mistral-7b-openorca.Q4_0.gguf loaded successfully

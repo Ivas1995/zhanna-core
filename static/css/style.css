@@ -1,0 +1,89 @@
+﻿:root {
+    --bg-dark: #0a0b1e;
+    --bg-secondary: #1c2526;
+    --text-primary: #00ccff;
+    --button-primary: #00ff00;
+    --button-hover: #00cc00;
+    --shadow-glow: rgba(0, 255, 204, 0.5);
+}
+
+body {
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-secondary));
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease;
+}
+
+.light-theme {
+    --bg-dark: #f0f4f8;
+    --bg-secondary: #ffffff;
+    --text-primary: #333333;
+    --button-primary: #28a745;
+    --button-hover: #218838;
+    --shadow-glow: rgba(40, 167, 69, 0.5);
+}
+
+button {
+    background: var(--button-primary);
+    color: var(--bg-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--shadow-glow);
+    font-weight: bold;
+}
+
+button:hover {
+    background: var(--button-hover);
+    box-shadow: 0 0 20px var(--shadow-glow);
+}
+
+input, textarea {
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--text-primary);
+    border: 1px solid var(--shadow-glow);
+    padding: 8px;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid var(--button-primary);
+    outline: none;
+}
+
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.chart-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 15px var(--shadow-glow);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    button {
+        padding: 8px 15px;
+    }
+    input, textarea {
+        padding: 6px;
+    }
+    .chart-container {
+        padding: 10px;
+    }
+}
